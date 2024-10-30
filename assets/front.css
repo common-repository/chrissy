@@ -1,0 +1,64 @@
+#chrissy-ui {
+  display: inline-block;
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  transform: translateZ(0) translateX(calc(-100% + 25px + 0.5em));
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 15vw;
+  max-height: 60vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  word-wrap: break-word;
+  word-break: break-word;
+  z-index: 9999;
+  padding: 0.25em;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  #chrissy-ui .header {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    #chrissy-ui .header .eye {
+      display: inline-block;
+      width: 25px;
+      height: 34.5px;
+      height: 19px;
+      background-size: 100%; }
+  #chrissy-ui #response-box {
+    border-top: 1px solid #ddd;
+    padding-top: 0.25em;
+    display: block;
+    position: relative;
+    margin-top: 0.25em;
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333; }
+    #chrissy-ui #response-box .example {
+      color: #777; }
+
+.show-chrissy {
+  transform: translateZ(0) translateX(0) !important; }
+
+.blink {
+  animation: eye-blink 0.3s steps(5) infinite; }
+
+@keyframes eye-blink {
+  0% {
+    background-position-y: 0; }
+  100% {
+    background-position-y: -175px; } }
+
+/*# sourceMappingURL=front.css.map */
